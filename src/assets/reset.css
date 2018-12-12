@@ -1,0 +1,124 @@
+html { 
+    overflow-x:auto; 
+    overflow-y:scroll; 
+    } 
+    body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td { 
+    font-weight:400; 
+    margin:0; 
+    padding:0; 
+    } 
+    h1, h2, h3, h4, h4, h5 { 
+    margin:0; 
+    padding:0; 
+    } 
+    body { 
+     
+    color:#666666; 
+    font-family:Helvetica,Arial,sans-serif; 
+    font-size:12px; 
+    padding:0 10px; 
+    text-align:left; 
+    } 
+    select { 
+    font-size:12px; 
+    } 
+    table { 
+    border-collapse:collapse; 
+    } 
+    fieldset, img { 
+    border:0 none; 
+    } 
+    fieldset { 
+    margin:0; 
+    padding:0; 
+    } 
+    fieldset p { 
+    margin:0; 
+    padding:0 0 0 8px; 
+    } 
+    legend { 
+    display:none; 
+    } 
+    address, caption, em, strong, th, i { 
+    font-style:normal; 
+    font-weight:400; 
+    } 
+    table caption { 
+    margin-left:-1px; 
+    } 
+    hr { 
+    border-bottom:1px solid #FFFFFF; 
+    border-top:1px solid #E4E4E4; 
+    border-width:1px 0; 
+    clear:both; 
+    height:2px; 
+    margin:5px 0; 
+    overflow:hidden; 
+    } 
+    ol, ul { 
+    list-style-image:none; 
+    list-style-position:outside; 
+    list-style-type:none; 
+    } 
+    caption, th { 
+    text-align:left; 
+    } 
+    q:before, q:after, blockquote:before, blockquote:after { 
+    content:""; 
+    } 
+    
+     
+    
+     
+    
+    百度有啊(www.youa.com)：（架构基本上是模仿YUI来做的） 
+    body { 
+    font-family:arial,helvetica,sans-serif; 
+    font-size:13px; 
+    font-size-adjust:none; 
+    font-stretch:normal; 
+    font-style:normal; 
+    font-variant:normal; 
+    font-weight:normal; 
+    line-height:1.4; 
+    text-align:center; 
+    } 
+    body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, p, form, fieldset, legend, input, textarea, select, button, th, td { 
+    margin:0; 
+    padding:0; 
+    } 
+    h1, h2, h3, h4, h5, h6 { 
+    font-size:100%; 
+    font-weight:normal; 
+    } 
+    table { 
+    font-size:inherit; 
+    } 
+    input, select { 
+    font-family:arial,helvetica,clean,sans-serif; 
+    font-size:100%; 
+    font-size-adjust:none; 
+    font-stretch:normal; 
+    font-style:normal; 
+    font-variant:normal; 
+    font-weight:normal; 
+    line-height:normal; 
+    } 
+    button { 
+    overflow:visible; 
+    } 
+    th, em, strong, b, address, cite { 
+    font-style:normal; 
+    font-weight:normal; 
+    } 
+    li { 
+    list-style-image:none; 
+    list-style-position:outside; 
+    list-style-type:none; 
+    } 
+    img, fieldset { 
+    border:0 none; 
+    } 
+    ins { 
+    text-decoration:none; 
+    } 
