@@ -71,7 +71,6 @@ html {
     
      
     
-    百度有啊(www.youa.com)：（架构基本上是模仿YUI来做的） 
     body { 
     font-family:arial,helvetica,sans-serif; 
     font-size:13px; 
@@ -121,4 +120,7 @@ html {
     } 
     ins { 
     text-decoration:none; 
-    } 
+    }
+    a{
+        text-decoration: none;
+    }
