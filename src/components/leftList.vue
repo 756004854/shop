@@ -28,7 +28,6 @@ export default {
       console.log( basePath )
       console.log( path.resolve(basePath, ...paths) )
       return path.resolve(basePath, ...paths)
-      // return path.resolve(this.basePath, ...paths);
     }
   }
 }
