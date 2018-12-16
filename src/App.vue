@@ -2,7 +2,7 @@
   <div id="app">
     <el-container>
       <el-aside style="width: 180px;">
-        <leftList :list="getLeftList()"></leftList> 
+        <leftList :list="getLeftList()" ></leftList> 
       </el-aside>
       <el-main>
         <router-view/> 

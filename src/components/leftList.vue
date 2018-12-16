@@ -6,7 +6,7 @@
       <el-collapse v-if=" value.children " @change="handleChange" :key="index">
         <el-collapse-item   :title=" value.name "  >
           <router-link :to="{path:value.path}" class="menu-warpper" :key="index" >{{ value.name }}</router-link>
-          <router-link v-for="(v,i) in value.children" :to="{path:v.path}" class="menu-warpper" :key="i" >{{ v.path }}</router-link>
+          <router-link v-for="(v,i) in value.children" :to="splitLink(value.path, v.path)" class="menu-warpper" :key="i" >{{ v.path }}</router-link>
         </el-collapse-item>
       </el-collapse>
     </template>
@@ -14,14 +14,21 @@
 </template>
 
 <script>
+import path from 'path';
 export default {
   name: 'leftList',
   props: {
-    list: Array
+    list: Array,
   },
   methods: {
     handleChange(val) {
       console.log(val);
+    },
+    splitLink(basePath, ...paths){
+      console.log( basePath )
+      console.log( path.resolve(basePath, ...paths) )
+      return path.resolve(basePath, ...paths)
+      // return path.resolve(this.basePath, ...paths);
     }
   }
 }
