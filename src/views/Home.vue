@@ -27,6 +27,12 @@
 
 export default {
   name: 'home',
+  created(){
+    this.$message({
+      message: "页面加载成功！",
+      type: "success"
+    })
+  },
   data(){
     var pass = (rule, value, callback) =>{
       if( value === "" )
