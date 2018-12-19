@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/views/Home.vue'
-import about from '@/views/About.vue'
+import table from '@/views/table.vue'
 import title1 from '@/views/title/title1.vue'
 import title2 from '@/views/title/title2.vue'
 import title2_1 from '@/views/title/title2-1.vue'
@@ -18,9 +18,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: '关于',
-      component:about
+      path: '/table',
+      name: '列表',
+      component:table
     },
     {
       path: '/title2',
