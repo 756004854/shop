@@ -19,7 +19,21 @@
       <el-table-column
         label="计数器"
       >
-        <el-input v-model="input" placeholder="请输入内容"></el-input>
+      <template slot-scope="scope">
+        <el-button
+          size="mini"
+          @click="handleEdit(scope.$index, scope.row)">Edit</el-button>
+        <el-button
+          size="mini"
+          type="danger"
+          @click="handleDelete(scope.$index, scope.row)">Delete</el-button>
+        <el-switch
+          v-model="scope.row.value"
+          active-color="#13ce66"
+          inactive-color="#ff4949">
+        </el-switch>
+        <el-input-number v-model="scope.row.num1" @change="handleChange" :min="1" :max="10" label="描述文字"></el-input-number>
+      </template>
       </el-table-column>
     </el-table>
   </div>
@@ -31,21 +45,27 @@
         tableData:[{
           data: "2016-7-11",
           name: "山哥",
+          value: true,
           num1: 0
         }, {
           data: "2016-7-11",
           name: "钟老师",
+          value: false,
           num1: 0
         }, {
           data: "2016-7-11",
           name: "小企鹅",
+          value: true,
           num1: 0
         }],
       }
     },
     methods:{
-      handleChange(value){
+      handleEdit(value){
         console.log(value)
+      },
+      handleChange(){
+        console.log(2)
       }
     }
   }
