@@ -36,7 +36,7 @@ export default {
 		},
     created(){
 			// 如 ip 被拉黑请联系 群管理员解封  qq 群 579621905
-			// 网易云文档 ?key=579621905&id=3778678&limit=10&offset=0
+			// 网易云文档 https://www.bzqll.com/2018/10/39.html
 			var link = "https://www.bzqll.com/2018/10/39.html"
 			this.axios.get("/api/music/netease/songList", {
 				params:{
@@ -46,17 +46,15 @@ export default {
 					offset : 0,
 				}
 			}).then(res => {
-					console.log(res.data.data.songs[0])
 					this.tableData = res.data.data.songs
 					// 成功回调
 				}, res => {
-					console.log(res)
-					// 错误回调
+          console.log(res)
 				})
 		},
 		methods:{
 			goToLink(row){
-				window.open(row.url)
+        this.$store.commit("editMusic",row)
 			},
 			goMMusic(){
 				console.log(this.input.trim())

@@ -1,5 +1,9 @@
 <template>
   <div id="app">
+    <div>
+      <p>歌曲名称：{{this.$store.state.music.name}}</p>
+      <p>歌&emsp;&emsp;手：{{this.$store.state.music.singer}}</p>
+    </div>
     <el-container>
       <el-aside style="width: 180px;">
         <leftList :list="getLeftList()" ></leftList> 
@@ -24,7 +28,7 @@ export default {
     }
   },
   created(){
-    console.log(this.$router.options.routes )
+    console.log(this.$store.state.music)
   }
 }
 </script>
